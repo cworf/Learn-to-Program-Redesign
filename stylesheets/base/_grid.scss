@@ -7,11 +7,16 @@
     grid-column: span $i;
   }
 }
-@for $i from 0 through 3 {
-    .gap-#{$i} {
-        grid-gap: #{$i}em;
-    }
+.gap {
+    grid-gap: 2em;
 }
+.thin-gap {
+    grid-gap: 1em;
+}
+.thick-gap {
+    grid-gap: 3em;
+}
+
 
 @media #{$medium-and-up}{
 
@@ -24,11 +29,7 @@
       grid-column: span $i;
     }
   }
-  @for $i from 0 through 3 {
-      .gap-md-#{$i} {
-          grid-gap: #{$i}em;
-      }
-  }
+
 }
 
   @media screen and (max-width:794px){
@@ -41,11 +42,6 @@
       .span-col-sm-#{$i} {
         grid-column: span $i;
       }
-    }
-    @for $i from 0 through 3 {
-        .gap-sm-#{$i} {
-            grid-gap: #{$i}em;
-        }
     }
 
 
