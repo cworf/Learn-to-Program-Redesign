@@ -27,6 +27,10 @@ Learning SASS this week was a lot of fun, having used css without sass for years
 |mixin|mixins are like variables which contain either entire structures of sass or just a few lines of css and can be called anywhere within the scope|We used mixins on elements which might be used frequently to reduce repetitive sass. for example a mixin which contained the css necessary to center an object vertically and horizontally within its parent, or a mixin to create a gradient overlay on an object.|
 |objects|these objects are very similar to javascript in that they include key/value pairs in an array like structure which can be looped through using the each function|we used this in our media query creation, by creating an object holding variables for each breakpoint we were able to durrastically reduce the number of lines of sass needed to output the proper media queries|
 
+## Today's Approach
+
+Today the main change will be to spend time organizing my sass structure before I start coding, starting with just the 2 elements I need from materialize, and adding more if I have need to or have the time. I will also be utilizing git ignore to fix the sass-cache problem. additionally I will try to figure out an even better way to create the grid structure.
+
 ## Copyright
 
 Creative Commons
