@@ -1,0 +1,3 @@
+# Ignore docs files
+stylesheets/.sass-cache
+stylesheets/.sass-cache/*
