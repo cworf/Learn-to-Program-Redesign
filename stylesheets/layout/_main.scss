@@ -1,6 +1,11 @@
 .tabs, .tabs .tab {
     height: auto;
 }
+.courses {
+    h2 {
+        font-size: 2em;
+    }
+}
 .course {
     img {
         display: none;
@@ -9,7 +14,6 @@
 
 @media #{$medium-and-up} {
     .tab {
-        min-width: 116px;
         &.course {
             img {
                 display: initial;
@@ -33,5 +37,10 @@
                 }
             }
         }
+    }
+}
+@media #{$large-and-up} {
+    .tab{
+        min-width: 116px;
     }
 }
