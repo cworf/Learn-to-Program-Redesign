@@ -9,6 +9,7 @@
 
 @media #{$medium-and-up} {
     .tab {
+        min-width: 116px;
         &.course {
             img {
                 display: initial;

@@ -1,0 +1,43 @@
+a.week-box {
+  background: whitesmoke;
+  box-shadow: 1px 1px 2px #0000004a;
+  transition: all .2s ease;
+  text-decoration: none;
+  display: block;
+  color: grey;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  h5, p, ul {
+    font-size: .9em;
+  }
+  h5 {
+      font-weight: bold;
+      border: 1px solid #0000001f;
+      border-width: 0px 0 1px;
+      padding: 0px 20% 24px;
+      display: inline-block;
+  }
+}
+
+.week-header {
+  overflow: auto;
+  background: #00b3b4;
+  color: #fff;
+  padding: 17px;
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+
+.week-content {
+  p {
+    padding: 0 15px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+}
+
+.week-grid h2 {
+    margin: 0;
+}
