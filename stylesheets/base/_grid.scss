@@ -1,3 +1,4 @@
+
 @for $i from 1 through 12 {
   .grid-#{$i} {
     display: grid;
@@ -6,6 +7,9 @@
   .span-col-#{$i} {
     grid-column: span $i;
   }
+}
+.no-gap {
+    grid-gap:0;
 }
 .gap {
     grid-gap: 2em;
@@ -29,20 +33,37 @@
       grid-column: span $i;
     }
   }
-
+  .gap-md {
+      grid-gap: 2em;
+  }
+  .thin-gap-md {
+      grid-gap: 1em;
+  }
+  .thick-gap-md {
+      grid-gap: 3em;
+  }
 }
+@media #{$large-and-up}{
 
-  @media screen and (max-width:794px){
-
-    @for $i from 1 through 12 {
-      .grid-sm-#{$i} {
-        display: grid;
-        grid-template-columns: repeat($i,1fr);
-      }
-      .span-col-sm-#{$i} {
-        grid-column: span $i;
-      }
+  @for $i from 1 through 12 {
+    .grid-lg-#{$i} {
+      display: grid;
+      grid-template-columns: repeat($i,1fr);
     }
+    .span-col-lg-#{$i} {
+      grid-column: span $i;
+    }
+  }
+  .gap-lg {
+      grid-gap: 2em;
+  }
+  .thin-gap-lg {
+      grid-gap: 1em;
+  }
+  .thick-gap-lg {
+      grid-gap: 3em;
+  }
+}
 
 
   // section .grid-3 {
@@ -52,4 +73,3 @@
   // .span-col-3 {
   //     grid-column: span 2!important;
   // }
-}

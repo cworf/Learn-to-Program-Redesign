@@ -1,0 +1,38 @@
+
+@media #{$large-and-up}{
+    nav {
+        position: fixed;
+        z-index: 9;
+        background: transparent;
+        box-shadow: none;
+        li {
+            position: relative;
+            a {
+                background: $brand-color;
+                &:hover {
+                    color:#000;
+                }
+            }
+            &:first-child:before, &:last-child:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 100px;
+                height: 100%;
+                top: 0;
+                border: solid #00b3b4;
+                border-width: 32px 50px;
+                border-bottom-color: transparent;
+            }
+            &:first-child:before {
+                right: 100%;
+                border-left-color: transparent;
+            }
+            &:last-child:after {
+                left: 100%;
+                border-right-color: transparent;
+
+            }
+        }
+    }
+}

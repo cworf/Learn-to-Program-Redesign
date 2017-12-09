@@ -2509,6 +2509,11 @@ td, th {
 .no-padding {
   padding: 0 !important; }
 
+/* This is needed for some mobile phones to display the Google Icon font properly */
+.material-icons {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga'; }
+
 nav {
   color: #fff;
   background-color: #00b3b4;
@@ -3314,6 +3319,9 @@ button.btn-floating {
 .span-col-12 {
   grid-column: span 12; }
 
+.no-gap {
+  grid-gap: 0; }
+
 .gap {
   grid-gap: 2em; }
 
@@ -3406,91 +3414,109 @@ button.btn-floating {
     grid-template-columns: repeat(12, 1fr); }
 
   .span-col-md-12 {
-    grid-column: span 12; } }
-@media screen and (max-width: 794px) {
-  .grid-sm-1 {
+    grid-column: span 12; }
+
+  .gap-md {
+    grid-gap: 2em; }
+
+  .thin-gap-md {
+    grid-gap: 1em; }
+
+  .thick-gap-md {
+    grid-gap: 3em; } }
+@media only screen and (min-width: 993px) {
+  .grid-lg-1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
 
-  .span-col-sm-1 {
+  .span-col-lg-1 {
     grid-column: span 1; }
 
-  .grid-sm-2 {
+  .grid-lg-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
 
-  .span-col-sm-2 {
+  .span-col-lg-2 {
     grid-column: span 2; }
 
-  .grid-sm-3 {
+  .grid-lg-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
 
-  .span-col-sm-3 {
+  .span-col-lg-3 {
     grid-column: span 3; }
 
-  .grid-sm-4 {
+  .grid-lg-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
 
-  .span-col-sm-4 {
+  .span-col-lg-4 {
     grid-column: span 4; }
 
-  .grid-sm-5 {
+  .grid-lg-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
 
-  .span-col-sm-5 {
+  .span-col-lg-5 {
     grid-column: span 5; }
 
-  .grid-sm-6 {
+  .grid-lg-6 {
     display: grid;
     grid-template-columns: repeat(6, 1fr); }
 
-  .span-col-sm-6 {
+  .span-col-lg-6 {
     grid-column: span 6; }
 
-  .grid-sm-7 {
+  .grid-lg-7 {
     display: grid;
     grid-template-columns: repeat(7, 1fr); }
 
-  .span-col-sm-7 {
+  .span-col-lg-7 {
     grid-column: span 7; }
 
-  .grid-sm-8 {
+  .grid-lg-8 {
     display: grid;
     grid-template-columns: repeat(8, 1fr); }
 
-  .span-col-sm-8 {
+  .span-col-lg-8 {
     grid-column: span 8; }
 
-  .grid-sm-9 {
+  .grid-lg-9 {
     display: grid;
     grid-template-columns: repeat(9, 1fr); }
 
-  .span-col-sm-9 {
+  .span-col-lg-9 {
     grid-column: span 9; }
 
-  .grid-sm-10 {
+  .grid-lg-10 {
     display: grid;
     grid-template-columns: repeat(10, 1fr); }
 
-  .span-col-sm-10 {
+  .span-col-lg-10 {
     grid-column: span 10; }
 
-  .grid-sm-11 {
+  .grid-lg-11 {
     display: grid;
     grid-template-columns: repeat(11, 1fr); }
 
-  .span-col-sm-11 {
+  .span-col-lg-11 {
     grid-column: span 11; }
 
-  .grid-sm-12 {
+  .grid-lg-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr); }
 
-  .span-col-sm-12 {
-    grid-column: span 12; } }
+  .span-col-lg-12 {
+    grid-column: span 12; }
+
+  .gap-lg {
+    grid-gap: 2em; }
+
+  .thin-gap-lg {
+    grid-gap: 1em; }
+
+  .thick-gap-lg {
+    grid-gap: 3em; } }
 /**
  * Set up a decent box model on the root element
  */
@@ -3516,6 +3542,15 @@ a {
   text-decoration: none; }
   a:hover, a:active, a:focus {
     color: #757575; }
+
+.flex {
+  display: flex; }
+  .flex.out {
+    justify-content: space-between; }
+  .flex.even {
+    justify-content: space-around; }
+  .flex.mid {
+    justify-content: center; }
 
 /**
  * Basic typography style for copy text
@@ -3581,5 +3616,75 @@ body {
 
 .tabs, .tabs .tab {
   height: auto; }
+
+.course img {
+  display: none; }
+
+@media only screen and (min-width: 601px) {
+  .tab.course img {
+    display: initial;
+    height: 50px; }
+  .tab.course a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #018182;
+    padding: 10px; }
+    .tab.course a span {
+      display: block;
+      background: #018182;
+      align-self: stretch;
+      line-height: 1;
+      padding: 5px;
+      color: #fff;
+      font-weight: 100;
+      margin-bottom: 10px; } }
+@media only screen and (min-width: 993px) {
+  nav {
+    position: fixed;
+    z-index: 9;
+    background: transparent;
+    box-shadow: none; }
+    nav li {
+      position: relative; }
+      nav li a {
+        background: #00b3b4; }
+        nav li a:hover {
+          color: #000; }
+      nav li:first-child:before, nav li:last-child:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100%;
+        top: 0;
+        border: solid #00b3b4;
+        border-width: 32px 50px;
+        border-bottom-color: transparent; }
+      nav li:first-child:before {
+        right: 100%;
+        border-left-color: transparent; }
+      nav li:last-child:after {
+        left: 100%;
+        border-right-color: transparent; } }
+.parallax img {
+  object-fit: cover; }
+
+header.parallax-container {
+  display: flex; }
+header .title-box {
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  color: #fff; }
+  header .title-box img {
+    width: 170px; }
+
+.header-bar.flex.attach.btm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex; }
 
 /*# sourceMappingURL=main.css.map */

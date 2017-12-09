@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheets/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/bin/materialize.js"></script>
@@ -11,19 +11,18 @@
     <body>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo" style="display:none;">Learn how to program</a>
                 <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="center hide-on-med-and-down">
+                <ul class="center hide-on-med-and-down flex mid">
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Forum</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Epicenter</a></li>
-                    <li><a href="#"><button class="btn">Apply Now</button></a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-menu">
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Forum</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Epicenter</a></li>
+                    <li><a href="#"><button class="btn">Apply Now</button></a></li>
                 </ul>
             </div>
         </nav>
@@ -32,6 +31,7 @@
                 <img src="img/header-image.jpg" alt="">
             </div>
             <div class="title-box">
+                <img src="img/logo.png" alt="">
                 <h1 class="title">Learn How to program</h1>
                 <div class="subtitle">Course material for epicodus students</div>
             </div>
@@ -48,10 +48,10 @@
             </div>
         </header>
         <section>
-            <div class="container grid-md-4 gap">
+            <div class="container grid-lg-4 gap">
                 <div class="courses">
                     <h2 class="center-align">Course List</h2>
-                    <ul class="grid-md-2 thin-gap tabs">
+                    <ul class="grid-4 grid-md-5 grid-lg-2 no-gap thin-gap-md tabs">
                         <li class="tab course"><a href="#intro" onclick="Materialize.showStaggeredList('#intro-list')"><span>Intro</span><img src="img/intro.png" alt=""></a></li>
                         <li class="tab course"><a href="#css" onclick="Materialize.showStaggeredList('#css-list')"><span>CSS</span><img src="img/css.png" alt=""></a></li>
                         <li class="tab course"><a href="#c" onclick="Materialize.showStaggeredList('#c-list')"><span>C#</span><img src="img/c-sharp.png" alt=""></a></li>

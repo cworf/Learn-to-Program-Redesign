@@ -32,3 +32,18 @@ a {
     color: $text-color;
   }
 }
+
+.flex {
+
+    display: flex;
+    &.out{
+        justify-content: space-between;
+    }
+    &.even{
+        justify-content: space-around;
+    }
+    &.mid{
+        justify-content: center;
+    }
+
+}
