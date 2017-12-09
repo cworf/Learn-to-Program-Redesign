@@ -10,9 +10,9 @@
 
 ## Instructions
 
-1. Clone project ```$ git clone https://github.com/cworf/copy-google.git ```
+1. Clone project ```$ git clone https://github.com/cworf/Learn-to-Program-Redesign.git ```
 2. enter project by opening the repository and selecting index.html
-3. view final project online by visiting https://cworf.github.io/copy-google/
+3. view final project online by visiting https://cworf.github.io/Learn-to-Program-Redesign/
 
 ## Thoughts and Feedback
 
