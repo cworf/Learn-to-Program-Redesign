@@ -1,6 +1,6 @@
 ### CSS Week 3 Code Review - Epicodus
 
-#Redesigning learnhowtoprogram.com site
+# Redesigning learnhowtoprogram.com site
 
 ### Author: Colin Worf
 
