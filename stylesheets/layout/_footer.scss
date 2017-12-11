@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer {
+    background: #001819;
+    padding: 65px 50px 50px;
+    .foot-menu li {
+        display: inline-block;
+        &:not(:last-child):after {
+            content: "|";
+            color: #fff;
+            padding-left: 5px;
+        }
+    }
+    .flex {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .btn {
+        background: #007380;
+    }
+    .bottom-bar {
+        flex-basis: 100%;
+        margin-top: 45px;
+    }
+}

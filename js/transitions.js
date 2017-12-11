@@ -58,6 +58,7 @@
         { duration: 800, delay: time, easing: [60, 10] });
       time += 120;
     });
+
   };
 
 

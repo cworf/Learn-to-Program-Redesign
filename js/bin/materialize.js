@@ -6161,6 +6161,9 @@ if (Vel) {
       $(this).velocity({ opacity: "1", translateX: "0" }, { duration: 800, delay: time, easing: [60, 10] });
       time += 120;
     });
+    $('.specs:not(.active) li').each(function(){
+        $(this).css('opacity','0');
+    });
   };
 
   $(document).ready(function () {

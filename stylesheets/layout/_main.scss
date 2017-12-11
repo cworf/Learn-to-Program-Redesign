@@ -11,6 +11,9 @@
         display: none;
     }
 }
+section {
+    padding: 100px 0px 100px;
+}
 
 @media #{$medium-and-up} {
     .tab {
